@@ -3,38 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Consentimiento SMS - Mi Empresa</title>
+    <title>Consentimiento SMS - Satoru Shield</title>
     <style>
         body { font-family: Arial, sans-serif; max-width: 600px; margin: 50px auto; padding: 20px; }
         .container { border: 1px solid #ddd; padding: 30px; border-radius: 10px; }
-        button { background: #007bff; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; }
-        input { padding: 10px; width: 200px; margin-right: 10px; margin-bottom: 10px; }
+        button { background: #007bff; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; margin-top: 10px; }
+        input[type="tel"] { padding: 10px; width: 200px; margin-right: 10px; margin-bottom: 10px; }
         .terms { background: #f9f9f9; padding: 15px; border-radius: 5px; margin: 20px 0; }
+        .consent-box { background: #e8f4fd; padding: 15px; border-radius: 5px; margin: 15px 0; border: 1px solid #b8daff; }
+        .consent-box label { display: block; cursor: pointer; }
+        .consent-box input[type="checkbox"] { margin-right: 10px; }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>📱 Registro para Mensajes SMS</h1>
         
-        <p><strong>Al proporcionar tu número, aceptas recibir mensajes SMS automáticos de Mi Empresa.</strong></p>
+        <p><strong>Al proporcionar tu número, aceptas recibir mensajes SMS automáticos de Satoru Shield.</strong></p>
         
         <div class="terms">
             <h3>📋 Términos del Servicio:</h3>
             <ul>
-                <li>🔔 <strong>Frecuencia:</strong> Aproximadamente 2-4 mensajes por semana</li>
-                <li>💬 <strong>Contenido:</strong> Alertas, notificaciones y promociones</li>
+                <li>🔔 <strong>Frecuencia:</strong> Mensajes según necesidad (códigos de verificación y alertas de seguridad)</li>
+                <li>💬 <strong>Contenido:</strong> Códigos de verificación, alertas de seguridad y notificaciones de emergencia</li>
                 <li>📱 <strong>Costo:</strong> Se aplican tarifas de mensajería de tu operador</li>
                 <li>🚫 <strong>Cancelar:</strong> Responde STOP en cualquier momento</li>
                 <li>❓ <strong>Ayuda:</strong> Responde HELP para asistencia</li>
-                <li>📞 <strong>Soporte:</strong> soporte@miempresa.com</li>
+                <li>📞 <strong>Soporte:</strong> satorushieldservices@gmail.com</li>
             </ul>
         </div>
 
         <div class="form-section">
             <h3>📝 Registra tu número:</h3>
             <form>
+                <!-- Checkbox de consentimiento explícito -->
+                <div class="consent-box">
+                    <label>
+                        <input type="checkbox" required> 
+                        <strong>✓ ACEPTO recibir mensajes SMS de Satoru Shield</strong><br>
+                        <small>He leído y acepto los términos de servicio arriba mencionados</small>
+                    </label>
+                </div>
+                
                 <input type="tel" placeholder="+52 123 456 7890" required><br>
-                <button type="submit">✅ Acepto y Registro mi Número</button>
+                <button type="submit">✅ Confirmar Registro</button>
             </form>
         </div>
 
